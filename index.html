@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff8f1" />
+  <title>End of Summer Barbecue 2026</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="End of Summer Barbecue - Ihr seid eingeladen!" />
+  <meta property="og:description" content="Samstag, 26. September 2026 ab 16:00 Uhr bei uns in Ahrensburg. Sagt kurz zu oder ab." />
+  <meta property="og:url" content="https://dennisknauer12-png.github.io/BBQ-Party/" />
+  <meta property="og:image" content="https://dennisknauer12-png.github.io/BBQ-Party/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --cream: #fff8f1;
+      --paper: #fffdf9;
+      --peach: #ffd6c4;
+      --coral: #ef8b72;
+      --butter: #ffe7a6;
+      --sage: #cfe3d4;
+      --mint: #e8f3eb;
+      --sky: #d9ecf7;
+      --ink: #2d3934;
+      --muted: #66736c;
+      --line: rgba(65, 86, 75, .12);
+      --shadow: 0 20px 55px rgba(80, 67, 52, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--cream);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 8%, rgba(255, 214, 196, .72), transparent 28%),
+        radial-gradient(circle at 88% 10%, rgba(217, 236, 247, .72), transparent 30%),
+        linear-gradient(180deg, #fffaf5 0%, #f7fbf8 100%);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    section {
+      min-height: 100svh;
+      padding:
+        max(18px, env(safe-area-inset-top))
+        14px
+        max(28px, env(safe-area-inset-bottom));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 720px;
+      background: rgba(255, 255, 255, .88);
+      border: 1px solid rgba(255, 255, 255, .95);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 26px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: var(--butter);
+      opacity: .28;
+      top: -80px;
+      right: -65px;
+      pointer-events: none;
+    }
+
+    .page > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--coral);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+      font-size: clamp(3rem, 15vw, 5rem);
+      line-height: .88;
+      letter-spacing: -.06em;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--coral);
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: -.04em;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: clamp(2.25rem, 10vw, 3.8rem);
+      line-height: .95;
+      letter-spacing: -.05em;
+    }
+
+    .lead {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    .tagline {
+      margin: 22px 0 0;
+      color: #486454;
+      font-size: .82rem;
+      line-height: 1.35;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .scroll-cue {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 15px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-weight: 800;
+      color: #486454;
+      box-shadow: 0 8px 22px rgba(80, 67, 52, .08);
+      animation: floatCue 2.8s ease-in-out infinite;
+    }
+
+    @keyframes floatCue {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(7px); }
+    }
+
+    .hero-art {
+      margin-top: 28px;
+      width: min(100%, 270px);
+      aspect-ratio: 270 / 430;
+      min-height: 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg,
+          #ffdfaa 0%,
+          #ffc18f 21%,
+          #f49881 42%,
+          #7aa08a 56%,
+          #4e7967 100%);
+      border: 1px solid var(--line);
+    }
+
+    .hero-svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .svg-sun {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: svgSunPulse 4.8s ease-in-out infinite;
+    }
+
+    @keyframes svgSunPulse {
+      0%, 100% { transform: scale(1); opacity: .96; }
+      50% { transform: scale(1.04); opacity: 1; }
+    }
+
+    .svg-smoke {
+      animation: svgSmokeRise 3.2s ease-in-out infinite;
+    }
+
+    .svg-smoke-two {
+      animation-delay: -1.2s;
+    }
+
+    @keyframes svgSmokeRise {
+      0% { transform: translateY(9px); opacity: 0; }
+      42% { opacity: .72; }
+      100% { transform: translateY(-17px); opacity: 0; }
+    }
+
+    .svg-ember {
+      animation: svgEmberPulse 1.5s ease-in-out infinite;
+    }
+
+    .svg-ember:nth-of-type(2) {
+      animation-delay: -.55s;
+    }
+
+    @keyframes svgEmberPulse {
+      0%, 100% { opacity: .55; }
+      50% { opacity: 1; }
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 82% 12%, rgba(255, 232, 171, .7), transparent 34%),
+        linear-gradient(180deg, rgba(255, 157, 106, .22), transparent 52%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .sun {
+      position: absolute;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      right: 30px;
+      top: 25px;
+      background: radial-gradient(circle at 50% 50%,
+        #fff7df 0%,
+        #ffe29c 35%,
+        #ffbd74 60%,
+        #ff8f66 79%,
+        rgba(255, 143, 102, 0) 81%);
+      box-shadow: 0 0 58px 24px rgba(255, 184, 126, .52);
+      z-index: 1;
+      animation: sunPulse 4.8s ease-in-out infinite;
+    }
+
+    @keyframes sunPulse {
+      0%, 100% { transform: translateY(0) scale(1); filter: saturate(1); }
+      50% { transform: translateY(4px) scale(1.04); filter: saturate(1.08); }
+    }
+
+    .cloud {
+      display: none;
+      position: absolute;
+      height: 18px;
+      border-radius: 999px;
+      background: rgba(255, 250, 242, .54);
+      z-index: 1;
+      animation: cloudDrift 16s ease-in-out infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: inherit;
+    }
+
+    .cloud::before {
+      width: 28px;
+      height: 28px;
+      left: 14px;
+      top: -12px;
+    }
+
+    .cloud::after {
+      width: 36px;
+      height: 36px;
+      right: 18px;
+      top: -19px;
+    }
+
+    .cloud-one {
+      width: 92px;
+      left: 32px;
+      top: 48px;
+    }
+
+    .cloud-two {
+      width: 76px;
+      right: 98px;
+      top: 86px;
+      opacity: .65;
+      animation-delay: -6s;
+    }
+
+    @keyframes cloudDrift {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(14px); }
+    }
+
+    .house {
+      position: absolute;
+      width: 178px;
+      height: 158px;
+      left: 78px;
+      bottom: 84px;
+      background: #fffaf5;
+      border-radius: 10px 10px 4px 4px;
+      box-shadow: 0 14px 24px rgba(65, 80, 70, .1);
+      z-index: 2;
+    }
+
+    .house::before {
+      content: "";
+      position: absolute;
+      left: -22px;
+      top: -64px;
+      border-left: 111px solid transparent;
+      border-right: 111px solid transparent;
+      border-bottom: 65px solid #9f6468;
+      filter: drop-shadow(0 6px 4px rgba(82, 66, 52, .08));
+    }
+
+    .door {
+      position: absolute;
+      left: 75px;
+      bottom: 0;
+      width: 42px;
+      height: 68px;
+      border-radius: 22px 22px 0 0;
+      background: #8fae9c;
+    }
+
+    .window {
+      position: absolute;
+      left: 24px;
+      top: 37px;
+      width: 46px;
+      height: 42px;
+      background: #ffe3a0;
+      border: 6px solid white;
+      box-shadow: 0 0 16px 4px rgba(255, 214, 140, .7);
+    }
+
+    .terrace {
+      position: absolute;
+      left: 22px;
+      right: 16px;
+      bottom: 18px;
+      height: 118px;
+      border-radius: 14px;
+      transform: none;
+      background: repeating-linear-gradient(90deg, #d4d7d5 0 15px, #bfc6c2 15px 18px);
+      box-shadow: 0 12px 20px rgba(80, 82, 80, .18);
+      z-index: 3;
+    }
+
+    .umbrella {
+      position: absolute;
+      --umbrella-scale: 1;
+      left: -8px;
+      bottom: 95px;
+      width: 154px;
+      height: 172px;
+      z-index: 5;
+      transform-origin: 63px 166px;
+      animation: umbrellaSway 5s ease-in-out infinite;
+    }
+
+    @keyframes umbrellaSway {
+      0%, 100% { transform: scale(var(--umbrella-scale)) rotate(-.8deg); }
+      50% { transform: scale(var(--umbrella-scale)) rotate(1.2deg); }
+    }
+
+    .umbrella-canopy {
+      position: absolute;
+      left: -34px;
+      top: 18px;
+      width: 150px;
+      height: 78px;
+      border-radius: 130px 130px 18px 18px;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, .28), transparent 34%),
+        repeating-linear-gradient(90deg, #d9d0bd 0 26px, #eee3cd 26px 52px);
+      border: 3px solid rgba(112, 105, 91, .35);
+      transform: rotate(0deg);
+      box-shadow: 0 12px 18px rgba(66, 72, 63, .11);
+    }
+
+    .umbrella-pole {
+      position: absolute;
+      left: 59px;
+      top: 90px;
+      width: 7px;
+      height: 130px;
+      border-radius: 99px;
+      background: #736f67;
+      transform: none;
+    }
+
+    .table {
+      position: absolute;
+      left: 43px;
+      bottom: 64px;
+      width: 110px;
+      height: 22px;
+      border-radius: 7px;
+      background: #917257;
+      box-shadow: 0 7px 0 #b58d66;
+      z-index: 6;
+    }
+
+    .table::before,
+    .table::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      width: 8px;
+      height: 54px;
+      background: #71583f;
+      border-radius: 4px;
+    }
+
+    .table::before {
+      left: 18px;
+    }
+
+    .table::after {
+      right: 18px;
+    }
+
+    .plate {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff8ee;
+      box-shadow: inset 0 -2px 0 rgba(83, 70, 55, .08);
+      z-index: 7;
+    }
+
+    .plate-one {
+      width: 30px;
+      height: 13px;
+      left: 58px;
+      bottom: 78px;
+    }
+
+    .plate-two {
+      width: 35px;
+      height: 14px;
+      left: 101px;
+      bottom: 79px;
+    }
+
+    .food-dot {
+      position: absolute;
+      width: 11px;
+      height: 7px;
+      border-radius: 60%;
+      background: #ef8b72;
+      z-index: 8;
+    }
+
+    .food-a {
+      left: 68px;
+      bottom: 84px;
+      background: #8fae63;
+    }
+
+    .food-b {
+      left: 112px;
+      bottom: 85px;
+      background: #c76150;
+    }
+
+    .food-c {
+      left: 126px;
+      bottom: 84px;
+      background: #f2c85f;
+    }
+
+    .grill {
+      position: absolute;
+      right: 44px;
+      bottom: 54px;
+      width: 96px;
+      height: 178px;
+      z-index: 7;
+      transform: scale(.74);
+      transform-origin: right bottom;
+    }
+
+    .smoke {
+      position: absolute;
+      width: 24px;
+      height: 58px;
+      border: 5px solid rgba(255, 255, 255, .74);
+      border-color: rgba(255, 255, 255, .78) transparent transparent transparent;
+      border-radius: 50%;
+      top: -38px;
+      opacity: .72;
+      z-index: 1;
+      animation: smokeRise 3.8s ease-in-out infinite;
+    }
+
+    .smoke-a {
+      left: 22px;
+      animation-delay: -.5s;
+    }
+
+    .smoke-b {
+      left: 44px;
+      top: -52px;
+      opacity: .58;
+      animation-delay: -1.6s;
+    }
+
+    .smoke-c {
+      left: 34px;
+      top: -66px;
+      opacity: .42;
+      animation-delay: -2.5s;
+    }
+
+    @keyframes smokeRise {
+      0% { transform: translateY(8px) scale(.88) rotate(-8deg); opacity: .12; }
+      42% { opacity: .7; }
+      100% { transform: translateY(-24px) scale(1.16) rotate(9deg); opacity: 0; }
+    }
+
+    .heat {
+      position: absolute;
+      left: 18px;
+      top: 28px;
+      width: 68px;
+      height: 44px;
+      background:
+        radial-gradient(ellipse at 24% 70%, rgba(255, 230, 143, .36), transparent 50%),
+        radial-gradient(ellipse at 64% 68%, rgba(255, 147, 93, .32), transparent 48%);
+      filter: blur(4px);
+      opacity: .55;
+      z-index: 2;
+      animation: shimmer 1.9s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { transform: translateY(0) scaleX(1); opacity: .38; }
+      50% { transform: translateY(-3px) scaleX(1.08); opacity: .65; }
+    }
+
+    .grill-rim {
+      position: absolute;
+      left: 10px;
+      top: 54px;
+      width: 84px;
+      height: 18px;
+      border-radius: 50%;
+      background: #4f5853;
+      border: 4px solid #222926;
+      z-index: 5;
+    }
+
+    .grill-bowl {
+      position: absolute;
+      top: 62px;
+      left: 12px;
+      width: 80px;
+      height: 54px;
+      border-radius: 10px 10px 58px 58px;
+      background: linear-gradient(25deg, #080b09, #2c322f);
+      border: 4px solid #4a524e;
+      box-shadow: inset -7px -8px 11px rgba(255, 255, 255, .035);
+      z-index: 4;
+    }
+
+    .grill-grate {
+      position: absolute;
+      left: 18px;
+      top: 53px;
+      width: 68px;
+      height: 19px;
+      z-index: 6;
+      background: repeating-linear-gradient(90deg, transparent 0 8px, rgba(218, 224, 220, .9) 8px 10px);
+      border-top: 2px solid rgba(218, 224, 220, .92);
+      border-bottom: 2px solid rgba(218, 224, 220, .88);
+      border-radius: 50%;
+      transform: rotate(-2deg);
+    }
+
+    .grill-food {
+      position: absolute;
+      z-index: 8;
+      border-radius: 999px;
+      animation: foodGlow 2.4s ease-in-out infinite;
+    }
+
+    .steak {
+      left: 27px;
+      top: 47px;
+      width: 28px;
+      height: 15px;
+      background: linear-gradient(120deg, #a94a37, #e48769);
+      transform: rotate(-8deg);
+    }
+
+    .sausage {
+      left: 56px;
+      top: 49px;
+      width: 32px;
+      height: 10px;
+      background: linear-gradient(120deg, #bf6b3f, #f0a75c);
+      transform: rotate(8deg);
+    }
+
+    @keyframes foodGlow {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.14) saturate(1.14); }
+    }
+
+    .ember {
+      position: absolute;
+      border-radius: 50%;
+      background: #ff8a4c;
+      box-shadow: 0 0 12px 5px rgba(255, 113, 63, .5);
+      z-index: 5;
+      animation: emberPulse 1.6s ease-in-out infinite;
+    }
+
+    .ember-a {
+      left: 33px;
+      top: 77px;
+      width: 10px;
+      height: 8px;
+    }
+
+    .ember-b {
+      left: 56px;
+      top: 80px;
+      width: 8px;
+      height: 7px;
+      animation-delay: -.6s;
+    }
+
+    .ember-c {
+      left: 47px;
+      top: 91px;
+      width: 9px;
+      height: 7px;
+      animation-delay: -1s;
+    }
+
+    @keyframes emberPulse {
+      0%, 100% { opacity: .42; transform: scale(.9); }
+      50% { opacity: 1; transform: scale(1.14); }
+    }
+
+    .spark {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #ffe8a5;
+      box-shadow: 0 0 9px 3px rgba(255, 218, 131, .62);
+      z-index: 9;
+      animation: sparkLift 2.2s ease-in-out infinite;
+    }
+
+    .spark-a {
+      left: 36px;
+      top: 36px;
+    }
+
+    .spark-b {
+      left: 68px;
+      top: 40px;
+      animation-delay: -.9s;
+    }
+
+    @keyframes sparkLift {
+      0% { transform: translateY(12px); opacity: 0; }
+      35% { opacity: 1; }
+      100% { transform: translateY(-22px); opacity: 0; }
+    }
+
+    .ash-catcher {
+      position: absolute;
+      top: 113px;
+      left: 36px;
+      width: 34px;
+      height: 17px;
+      border-radius: 4px 4px 18px 18px;
+      background: #aeb4b1;
+      border: 3px solid #59625d;
+      z-index: 4;
+    }
+
+    .tripod {
+      position: absolute;
+      top: 109px;
+      width: 5px;
+      height: 54px;
+      background: #5a6560;
+      transform-origin: top;
+      z-index: 3;
+    }
+
+    .leg-a {
+      left: 29px;
+      transform: rotate(13deg);
+    }
+
+    .leg-b {
+      right: 29px;
+      transform: rotate(-13deg);
+    }
+
+    .leg-c {
+      left: 52px;
+      height: 48px;
+    }
+
+    .grill-wheel {
+      position: absolute;
+      top: 154px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #939b97 0 20%, #27302c 22% 64%, #111613 66%);
+      border: 2px solid #3f4944;
+      z-index: 4;
+    }
+
+    .wheel-a {
+      left: 13px;
+    }
+
+    .wheel-b {
+      right: 13px;
+    }
+
+    .facts,
+    .rsvp-info {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .fact,
+    .info-card {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 13px;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .82);
+    }
+
+    .info-card {
+      grid-template-columns: 1fr;
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--peach);
+      font-size: 1.25rem;
+    }
+
+    .fact strong,
+    .info-card strong {
+      display: block;
+      font-size: .98rem;
+    }
+
+    .fact span,
+    .info-card span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.45;
+    }
+
+    .map-link {
+      display: inline-flex;
+      margin-top: 8px;
+      color: #3f6b57;
+      font-size: .9rem;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .map-link:hover {
+      text-decoration: underline;
+    }
+
+    .good-to-know {
+      margin-top: 16px;
+      padding: 17px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(232, 243, 235, .95), rgba(255, 255, 255, .86));
+      border: 1px solid var(--line);
+    }
+
+    .good-to-know h3 {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    .good-to-know ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: .94rem;
+    }
+
+    .good-to-know li + li {
+      margin-top: 8px;
+    }
+
+    form {
+      margin-top: 24px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: white;
+      box-shadow: 0 14px 30px rgba(75, 69, 60, .06);
+    }
+
+    label {
+      display: block;
+      margin: 13px 0 7px;
+      font-size: .84rem;
+      font-weight: 850;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid rgba(63, 107, 87, .2);
+      border-radius: 14px;
+      background: #fbfdfb;
+      color: var(--ink);
+      font: inherit;
+      font-size: 16px;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    textarea {
+      min-height: 105px;
+      resize: vertical;
+    }
+
+    .answer-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 4px 0 2px;
+    }
+
+    .answer-btn {
+      min-height: 54px;
+      border: 0;
+      border-radius: 16px;
+      font: inherit;
+      font-size: 1.05rem;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .answer-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 22px rgba(75, 69, 60, .12);
+    }
+
+    .answer-btn.yes {
+      background: #3f6b57;
+      color: white;
+    }
+
+    .answer-btn.no {
+      background: #f1d1c7;
+      color: #754234;
+    }
+
+    .privacy-note {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.45;
+    }
+
+    .page-number {
+      margin-top: 22px;
+      text-align: right;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+    @supports (animation-timeline: view()) {
+      .page {
+        animation: reveal both linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 35%;
+      }
+
+      @keyframes reveal {
+        from { opacity: .55; transform: translateY(36px) scale(.985); }
+        to { opacity: 1; transform: none; }
+      }
+    }
+
+    @media (min-width: 760px) {
+      section {
+        padding: 42px;
+      }
+
+      .page {
+        padding: 48px;
+      }
+
+      .hero-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 36px;
+        align-items: center;
+      }
+
+      .hero-art {
+        margin-top: 0;
+        width: 270px;
+      }
+
+      .details-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .facts,
+      form {
+        margin-top: 0;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <article class="page">
+        <div class="hero-layout">
+          <div>
+            <div class="eyebrow">Eine Einladung fuer euch</div>
+            <h1>End of Summer <span>Barbecue bei uns</span></h1>
+            <p class="lead">
+              Ein letzter langer Sommerabend bei uns zu Hause - mit Terrasse,
+              Grill, kalten Drinks und den besten Leuten.
+            </p>
+            <p class="tagline">Good Vibes, Good Food, Good People</p>
+            <div class="scroll-cue">Nach unten scrollen ↓</div>
+          </div>
+
+          <div class="hero-art" aria-label="Illustration einer Terrasse mit Haus, Sonnenschirm, Tisch und Grill">
+            <svg class="hero-svg" viewBox="0 0 270 430" role="img" aria-label="Sonnenuntergang ueber Terrasse, Haus, Sonnenschirm, Tisch und Grill">
+              <defs>
+                <linearGradient id="bbqSky" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#f6d5a5" />
+                  <stop offset="54%" stop-color="#efb195" />
+                  <stop offset="55%" stop-color="#7da087" />
+                  <stop offset="100%" stop-color="#557a65" />
+                </linearGradient>
+                <radialGradient id="bbqSun" cx="50%" cy="50%" r="55%">
+                  <stop offset="0%" stop-color="#fff9bb" />
+                  <stop offset="52%" stop-color="#ffe479" />
+                  <stop offset="78%" stop-color="#ffb46f" />
+                  <stop offset="100%" stop-color="#fb9168" />
+                </radialGradient>
+                <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%">
+                  <feGaussianBlur stdDeviation="8" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <rect width="270" height="430" rx="22" fill="url(#bbqSky)" />
+
+              <g class="svg-sun" filter="url(#softGlow)">
+                <circle cx="196" cy="82" r="47" fill="url(#bbqSun)" opacity=".95" />
+                <circle cx="196" cy="82" r="30" fill="#fff7b3" opacity=".45" />
+              </g>
+
+              <g aria-hidden="true">
+                <rect x="56" y="196" width="166" height="160" rx="2" fill="#fffdf8" />
+                <polygon points="47,197 139,137 231,197" fill="#9f6468" />
+                <rect x="81" y="226" width="49" height="49" fill="#fff9e7" opacity=".92" />
+                <rect x="89" y="234" width="34" height="32" fill="#fbe096" />
+                <path d="M149 290c0-16 12-29 27-29s27 13 27 29v66h-54z" fill="#89ae9b" />
+                <circle cx="182" cy="276" r="3" fill="#d8e5d5" opacity=".7" />
+                <circle cx="189" cy="286" r="2.4" fill="#d8e5d5" opacity=".65" />
+                <circle cx="175" cy="282" r="2" fill="#d8e5d5" opacity=".55" />
+              </g>
+
+              <rect x="24" y="302" width="230" height="118" rx="14" fill="#d0d4d2" />
+              <g stroke="#b7bdb9" stroke-width="2">
+                <line x1="39" y1="305" x2="39" y2="419" />
+                <line x1="61" y1="305" x2="61" y2="419" />
+                <line x1="83" y1="305" x2="83" y2="419" />
+                <line x1="105" y1="305" x2="105" y2="419" />
+                <line x1="127" y1="305" x2="127" y2="419" />
+                <line x1="149" y1="305" x2="149" y2="419" />
+                <line x1="171" y1="305" x2="171" y2="419" />
+                <line x1="193" y1="305" x2="193" y2="419" />
+                <line x1="215" y1="305" x2="215" y2="419" />
+                <line x1="237" y1="305" x2="237" y2="419" />
+              </g>
+
+              <g aria-hidden="true">
+                <path d="M-4 191c15-10 39-13 67-12 33 1 52 18 53 56H0z" fill="#d8cfbd" stroke="#9c9787" stroke-width="3" />
+                <rect x="50" y="234" width="7" height="135" rx="3.5" fill="#6f7467" />
+              </g>
+
+              <g aria-hidden="true">
+                <line x1="62" y1="371" x2="62" y2="400" stroke="#76583f" stroke-width="6" stroke-linecap="round" />
+                <line x1="121" y1="371" x2="121" y2="400" stroke="#76583f" stroke-width="6" stroke-linecap="round" />
+                <rect x="45" y="348" width="95" height="25" rx="8" fill="#9a7858" />
+                <rect x="45" y="348" width="95" height="10" rx="6" fill="#b18a65" opacity=".75" />
+                <ellipse cx="66" cy="347" rx="13" ry="7" fill="#fff9ed" />
+                <ellipse cx="93" cy="348" rx="15" ry="7" fill="#fff9ed" />
+                <ellipse cx="119" cy="348" rx="14" ry="7" fill="#fff9ed" />
+                <circle cx="65" cy="346" r="5" fill="#d76c55" />
+                <circle cx="74" cy="346" r="4" fill="#92ad72" />
+                <path d="M87 348c5-7 15-7 20 0z" fill="#f4d87a" />
+                <circle cx="113" cy="346" r="5" fill="#8fae73" />
+                <circle cx="123" cy="346" r="5" fill="#d76c55" />
+              </g>
+
+              <g aria-hidden="true">
+                <path class="svg-smoke" d="M205 307c14-10 18-22 9-35" fill="none" stroke="#e4ebe5" stroke-width="5" stroke-linecap="round" opacity=".65" />
+                <path class="svg-smoke svg-smoke-two" d="M219 310c10-8 12-17 5-26" fill="none" stroke="#e4ebe5" stroke-width="4" stroke-linecap="round" opacity=".55" />
+                <path d="M168 333c0 29 16 52 36 52s36-23 36-52z" fill="#121816" stroke="#3c4641" stroke-width="4" />
+                <ellipse cx="204" cy="333" rx="37" ry="7" fill="#303a35" />
+                <g stroke="#d7ddd8" stroke-width="2">
+                  <line x1="172" y1="331" x2="236" y2="331" />
+                  <line x1="178" y1="326" x2="230" y2="337" />
+                  <line x1="230" y1="326" x2="178" y2="337" />
+                </g>
+                <ellipse cx="190" cy="323" rx="10" ry="5" fill="#d76c55" />
+                <ellipse cx="207" cy="323" rx="9" ry="5" fill="#bb664a" />
+                <ellipse cx="223" cy="324" rx="9" ry="5" fill="#ef9a53" />
+                <circle class="svg-ember" cx="188" cy="351" r="4" fill="#ff934f" />
+                <circle class="svg-ember" cx="205" cy="351" r="4" fill="#ffb355" />
+                <circle class="svg-ember" cx="222" cy="351" r="4" fill="#ff934f" />
+                <path d="M193 385c0 13 22 13 22 0" fill="none" stroke="#3c4641" stroke-width="4" stroke-linecap="round" />
+                <line x1="184" y1="382" x2="176" y2="405" stroke="#3c4641" stroke-width="5" stroke-linecap="round" />
+                <line x1="224" y1="382" x2="232" y2="405" stroke="#3c4641" stroke-width="5" stroke-linecap="round" />
+                <circle cx="176" cy="405" r="7" fill="#232c28" stroke="#64726b" stroke-width="3" />
+                <circle cx="232" cy="405" r="7" fill="#232c28" stroke="#64726b" stroke-width="3" />
+                <circle cx="246" cy="279" r="2.5" fill="#f7d27b" />
+                <circle cx="252" cy="291" r="2" fill="#f7d27b" />
+                <circle cx="240" cy="292" r="1.8" fill="#f7d27b" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="page-number">01 / 02</div>
+      </article>
+    </section>
+
+    <section>
+      <article class="page">
+        <div class="eyebrow">Der Abend</div>
+        <h2>Sommer, bleib noch ein bisschen.</h2>
+        <p class="lead">
+          Bevor die Abende wieder kuerzer werden, machen wir es uns noch einmal
+          richtig schoen: entspannt, persoenlich und mit allem, was zu einem guten
+          Barbecue gehoert.
+        </p>
+
+        <div class="details-layout">
+          <div>
+            <div class="facts">
+              <div class="fact">
+                <div class="icon">📅</div>
+                <div><strong>Samstag, 26. September 2026</strong><span>ab 16:00 Uhr</span></div>
+              </div>
+              <div class="fact">
+                <div class="icon">🏡</div>
+                <div>
+                  <strong>Bei uns zu Hause</strong>
+                  <span>Pomonaring 43, 22926 Ahrensburg</span>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Pomonaring%2043%2C%2022926%20Ahrensburg" target="_blank" rel="noopener noreferrer">In Google Maps oeffnen</a>
+                </div>
+              </div>
+              <div class="fact">
+                <div class="icon">🎶</div>
+                <div><strong>Terrassen-Vibes</strong><span>Musik, Drinks und ein langer Abend</span></div>
+              </div>
+            </div>
+
+            <div class="good-to-know">
+              <h3>🍴 Gut zu wissen</h3>
+              <ul>
+                <li><strong>Jeder bringt bitte eine Kleinigkeit fuer das Buffet mit</strong> (z. B. Salat, Brot, Dips oder Dessert).</li>
+                <li><strong>Grill-Basics sind vorhanden</strong> - besondere Grillwuensche bringt ihr bitte selbst mit.</li>
+                <li><strong>Bier, Aperol &amp; Lillet gehen auf uns</strong> - eure Lieblingsgetraenke duerft ihr gerne zusaetzlich mitbringen.</li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="direct-rsvp"
+                action="https://formsubmit.co/dennisknauer12@gmail.com"
+                method="POST">
+            <input type="hidden" name="_subject" value="RSVP End of Summer Barbecue" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://dennisknauer12-png.github.io/BBQ-Party/thanks.html" />
+
+            <label for="guestName">Dein Name</label>
+            <input id="guestName"
+                   name="Name"
+                   type="text"
+                   placeholder="Vorname oder Namen"
+                   required />
+
+            <label>Wirst du da sein?</label>
+            <div class="answer-buttons">
+              <button class="answer-btn yes"
+                      type="submit"
+                      name="Teilnahme"
+                      value="Ja">Ja</button>
+              <button class="answer-btn no"
+                      type="submit"
+                      name="Teilnahme"
+                      value="Nein">Nein</button>
+            </div>
+
+            <label for="guestNote">Was moechtest du mitbringen? <span aria-hidden="true">(optional)</span></label>
+            <textarea id="guestNote"
+                      name="Mitbringen"
+                      placeholder="Damit wir nicht fuenfmal Kartoffelsalat haben."></textarea>
+
+            <p class="privacy-note">
+              Mit dem Klick auf Ja oder Nein wird deine Rueckmeldung direkt verschickt.
+            </p>
+          </form>
+        </div>
+        <div class="page-number">02 / 02</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

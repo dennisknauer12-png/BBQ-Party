@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff8f1" />
+  <title>Danke fuer deine Rueckmeldung</title>
+  <style>
+    :root {
+      --cream: #fff8f1;
+      --paper: #fffdf9;
+      --peach: #ffd6c4;
+      --coral: #ef8b72;
+      --butter: #ffe7a6;
+      --ink: #2d3934;
+      --muted: #66736c;
+      --line: rgba(65, 86, 75, .12);
+      --shadow: 0 20px 55px rgba(80, 67, 52, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: max(18px, env(safe-area-inset-top)) 14px max(28px, env(safe-area-inset-bottom));
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 8%, rgba(255, 214, 196, .72), transparent 28%),
+        radial-gradient(circle at 88% 10%, rgba(217, 236, 247, .72), transparent 30%),
+        linear-gradient(180deg, #fffaf5 0%, #f7fbf8 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+      padding: 30px 22px;
+      border-radius: 28px;
+      border: 1px solid rgba(255, 255, 255, .95);
+      background: rgba(255, 255, 255, .9);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: var(--butter);
+      opacity: .28;
+      top: -80px;
+      right: -65px;
+      pointer-events: none;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--coral);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 12vw, 4rem);
+      line-height: .95;
+      letter-spacing: -.05em;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.02rem;
+    }
+
+    .event {
+      display: grid;
+      gap: 12px;
+      margin: 24px 0;
+      padding: 18px;
+      border-radius: 20px;
+      background: #fffdf9;
+      border: 1px solid var(--line);
+    }
+
+    .event strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .event span {
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .actions {
+      display: grid;
+      gap: 12px;
+    }
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      color: white;
+      background: #3f6b57;
+      font-weight: 850;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    a.secondary {
+      background: #f1d1c7;
+      color: #754234;
+    }
+
+    @media (min-width: 700px) {
+      .card {
+        padding: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Rueckmeldung gesendet</p>
+    <h1>Danke fuer deine Rueckmeldung.</h1>
+    <p>
+      Deine Antwort ist angekommen. Wenn du magst, kannst du dir den Abend direkt in den Kalender legen.
+    </p>
+
+    <div class="event">
+      <div><strong>End of Summer Barbecue</strong><span>Samstag, 26. September 2026, ab 16:00 Uhr</span></div>
+      <div><strong>Ort</strong><span>Pomonaring 43, 22926 Ahrensburg</span></div>
+    </div>
+
+    <div class="actions">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=End%20of%20Summer%20Barbecue&dates=20260926T160000/20260926T230000&ctz=Europe%2FBerlin&details=End%20of%20Summer%20Barbecue%20bei%20uns.%20Bitte%20bringt%20gerne%20eine%20Kleinigkeit%20fuer%20das%20Buffet%20oder%20eure%20Lieblingsgetraenke%20mit.&location=Pomonaring%2043%2C%2022926%20Ahrensburg" target="_blank" rel="noopener noreferrer">In Google Kalender eintragen</a>
+      <a class="secondary" href="https://dennisknauer12-png.github.io/BBQ-Party/">Zur Einladung zurueck</a>
+    </div>
+  </main>
+</body>
+</html>
